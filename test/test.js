@@ -20,13 +20,6 @@ describe('simpleCall', function () {
 
   it('Execution', async function () {
       /** CODE YOUR SOLUTION HERE */
-      const Exp = await hre.ethers.getContractFactory("Exp");
-      const exp = await Exp.deploy(existingStock.address);
-      await exp.connect(player).deployed();
-      
-      await exp.connect(player).approve();
-      await exp.connect(player).transfer();
-      await exp.connect(player).getFlag(); 
   });
 
   after(async function () {
